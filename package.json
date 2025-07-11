@@ -1,0 +1,25 @@
+{
+  "name": "awaproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run dev --prefix client",
+    "server": "npm start --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/modifiers": "^9.0.0",
+    "@dnd-kit/sortable": "^10.0.0",
+    "concurrently": "^9.2.0"
+  },
+  "devDependencies": {
+    "@types/materialize-css": "^1.0.14",
+    "@types/react-beautiful-dnd": "^13.1.8"
+  }
+}
